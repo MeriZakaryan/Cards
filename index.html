@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hayastan</title>
+</head>
+
+<body>
+    <div class="site-main-content">
+        <div class="side-bar">
+            <div class="open-btn-block"></div>
+                <button onclick="closeSideBar()" class="closeBtn hide" id="closed">✖</button>
+                <div class="bar-name">
+                    <a href="#">Home</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup-fone">
+            <div class="popup">
+                <button class="closePopup" onclick="closePopup()">✖</button>    
+            </div>
+        </div>
+        <div class="layout">
+            <div class="header">
+                <div class="logo"></div>
+                <div class="header-menus">
+                    <a href="#">Home</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact us</a>
+                </div>
+                <button onclick="openSideBar()" class="openBtn">☰</button>
+            </div>
+            <div class="main-content" id="card-1">
+                <div class="card-image"></div>
+                <div class="card-info">
+                    <h2>Yerevan</h2>
+                    <p>Yerevan is the capital and largest city of Armenia and one of the world's oldest continuously
+                        inhabited cities.Situated along the Hrazdan River, Yerevan is the administrative, cultural, and
+                        industrial center of the country. It has been the capital since 1918, the fourteenth in the
+                        history
+                        of Armenia and the seventh located in or around the Ararat plain. The city also serves as the
+                        seat
+                        of the Araratian Pontifical Diocese; the largest diocese of the Armenian Apostolic Church and
+                        one of
+                        the oldest dioceses in the world.The history of Yerevan dates back to the 8th century BC, with
+                        the
+                        founding of the fortress of Erebuni in 782 BC by King Argishti I at the western extreme of the
+                        Ararat plain.Erebuni was "designed as a great administrative and religious centre, a fully royal
+                        capital."</p>
+                    <button class="but"  onclick="openPopup(event)">Read more</button>
+                </div>
+            </div>
+            <div class="main-content" id="card-2">
+                <div class="card-image"></div>
+                <div class="card-info">
+                    <h2>Sevan</h2>
+                    <p>Lake Sevan is the largest body of water in both Armenia and the Caucasus region. It is one of the
+                        largest freshwater high-altitude (alpine) lakes in Eurasia. The lake is situated in Gegharkunik
+                        Province, at an altitude of 1,900 m (6,234 ft) above sea level. The total surface area of its
+                        basin
+                        is about 5,000 km2 (1,900 sq mi), which makes up ​1⁄6 of Armenia's territory.[7] The lake itself
+                        is
+                        1,242 km2 (480 sq mi), and the volume is 32.8 km3 (7.9 cu mi). It is fed by 28 rivers and
+                        streams.
+                        Only 10% of the incoming water is drained by the Hrazdan River, while the remaining 90%
+                        evaporates.The lake provides some 90% of the fish and 80% of the crayfish catch of Armenia.
+                        Sevan
+                        has significant economic, cultural, and recreational value. Its sole major island (now a
+                        peninsula)
+                        is home to a medieval monastery.</p>
+                    <button class="but"  onclick="openPopup(event)"> Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="card.js"></script>
+</body>
+
+</html>
